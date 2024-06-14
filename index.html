@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>To-Do List App</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+        <div class="todo-app">
+        <h2>To-Do List <img src="images/icon.png"></h2>
+        <div class="row">
+            <input type="text" id="input-box" placeholder="Add your text">
+            <button type="button" onclick="addTask()">Add</button>
+            <button type="button" onclick="clearTask()">Clear Task</button>
+        </div>
+      
+
+        <ul id="list-container">
+        <li>
+            <span class="checkbox"></span>
+            <span class="task-text">Task 1</span>
+            <div class="actions">
+            <span class="edit" onclick="editTask(this)">Edit</span>
+            <span class="delete" onclick="deleteTask(this)">&times;</span>
+            </div>
+        </li>
+        <li>
+            <span class="checkbox"></span>
+            <span class="task-text">Task 2</span>
+            <div class="actions">
+            <span class="edit" onclick="editTask(this)">Edit</span> 
+            <span class="delete" onclick="deleteTask(this)">&times;</span>
+            </div>
+        </li>
+        <li>
+            <span class="checkbox"></span>
+            <span class="task-text">Task 3</span> 
+            <div class="actions"> 
+            <span class="edit" onclick="editTask(this)">Edit</span> 
+            <span class="delete" onclick="deleteTask(this)">&times;</span>
+            </div>
+        </li>
+        </ul>
+        </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
